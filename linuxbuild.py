@@ -1,3 +1,4 @@
+#!/usr/bin/env python
 # Why am I not using Make?
 # 1.)   I want total control over the system.
 #       Occassionally I want to have some logic
@@ -6,7 +7,6 @@
 #       this will not matter.
 # 3.)   Feel free to implement your own make files.
 # 4.)   It is handy to know Python
-
 
 import os
 
@@ -19,7 +19,7 @@ SOURCE="./src/*.cpp"
 ARGUMENTS="-D LINUX -std=c++14"
 
 # Which directories do we want to include.
-INCLUDE_DIR="-I ./include/ -I ./thirdparty/glm/"
+INCLUDE_DIR="-I ./include/ -I ./glm/"
 
 # What libraries do we want to include
 LIBRARIES="-lSDL2 -ldl"
